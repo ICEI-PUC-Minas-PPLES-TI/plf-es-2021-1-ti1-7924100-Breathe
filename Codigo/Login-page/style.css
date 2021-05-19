@@ -1,0 +1,143 @@
+.footer {
+  height: 80px;
+  background-color: #f2d7e0;
+  margin-bottom: 10px;
+}
+
+.footer img {
+  height: 80px;
+}
+
+.footer_area {
+  padding-top: 30px;
+}
+
+body {
+  background-color: #c4bfe7 !important;
+}
+
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f2d7e0;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.texto_pes {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto_pes i {
+  font-size: 18px;
+  position: absolute;
+  left: 5%;
+  color: black;
+}
+
+.texto_pes input {
+  padding: 2px 3px;
+  margin-left: 5px;
+  background: transparent;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5px;
+}
+
+.texto_pes:focus-within input::placeholder {
+  visibility: hidden;
+}
+
+.texto_pes:focus-within i {
+  visibility: hidden;
+}
+
+.texto_pes input {
+  color: black;
+}
+
+.texto_pes input::placeholder {
+  color: black;
+  padding-left: 20px;
+}
+
+.botao1 {
+  background-color: rgba(0, 0, 0);
+  border-radius: 5%;
+  height: 30px;
+  margin-left: 5px;
+  border: none;
+  color: white;
+}
+
+.botao1:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+  height: 80px;
+}
+
+.main {
+  background-color: #78abc6;
+  margin: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 60px;
+}
+
+.nav-link {
+  border-radius: 5%;
+  padding: 5px 5px;
+  color: black;
+}
+
+.nav-link:hover {
+  background-color: #0d6dfd;
+  color: white;
+}
+
+.header nav {
+  padding-top: 20px;
+}
+
+.usuario,
+.senha,
+.login {
+  color: white !important;
+}
+
+#login {
+  padding-top: 60px;
+}
+
+.novo_log {
+  color: white !important;
+}
+
+.modal-body,
+.modal-footer,
+.modal-content {
+  background-color: #78abc6 !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .texto_pes {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .logo {
+    width: 50%;
+  }
+
+  .logo img {
+    width: 50%;
+    height: 100%;
+  }
+  
+}
