@@ -87,6 +87,8 @@ header {
     background-color: #78ABC6;
 }
 
+/*Notícias*/
+
 h1{
     font-size: 50px;
     text-align: center;
@@ -119,6 +121,24 @@ a{
     margin-bottom:10px;
 }
 
+.mensagem{
+    position:fixed !important;
+    top:50px; 
+    right:80px;
+}
+
+#img_mensagem {
+    width: 270px !important;    
+    height: 520px !important;
+    opacity: 0.6 !important;
+}
+
+.textomensagem{
+    color:black;
+    vertical-align: top;
+}
+
+/*Notícias*/
 
 .nav-link {
     border-radius: 5%;
