@@ -108,7 +108,7 @@ a{
 }
 
 .fotos{
-    width: 270px;
+    width: 220px;
     height: 190px;
     margin-bottom: 15px;
 }
@@ -126,9 +126,7 @@ a{
 }
 
 .mensagem{
-    position:fixed !important;
-    top:50px; 
-    right:80px;
+    margin-top: 70px;
 }
 
 #img_mensagem {
@@ -161,7 +159,20 @@ a{
     padding-top: 20px;
 }
 
+.carrossel_mobile {
+    display: none;
+}
+
 @media screen and (max-width:1024px) {
+
+    .mensagem{ 
+        display: none;
+    }
+    .carrossel_mobile {
+        display: block;
+        width: 200px;
+    }
+
     .texto_pes {
         display: none;
     }
@@ -211,10 +222,6 @@ a{
         height: 350px !important;
         opacity: 0.6 !important;
         }
-
-    .mensagem{ 
-        right:20px;
-    }
 
     .fotos{
         width: 120px;
