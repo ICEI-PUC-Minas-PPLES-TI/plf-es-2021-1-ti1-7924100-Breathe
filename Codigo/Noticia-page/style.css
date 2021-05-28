@@ -140,8 +140,8 @@ a{
 .carousel-caption{
     position: absolute;
     color:black;
-    align-items: top;
-    vertical-align: top;
+    text-align: center;
+    vertical-align: text-top;
 }
 
 /*Notícias*/
