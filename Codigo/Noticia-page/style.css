@@ -140,7 +140,7 @@ a{
 .carousel-caption{
     position: absolute;
     color:black;
-    text-align: center;
+    align-items: top;
     vertical-align: top;
 }
 
