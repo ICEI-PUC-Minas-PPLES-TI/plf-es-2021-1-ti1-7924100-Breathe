@@ -103,7 +103,7 @@ p{
     text-align: justify;
 }
 
-a{
+.titulo{
     color: #054fbe;
     text-decoration: none;
     font-size: 25px;
@@ -130,7 +130,7 @@ a{
     border-radius: 8px;
     margin-bottom: 5px;
     right:520px !important;
-    position: absolute !important;
+   
     
 }
 
@@ -212,7 +212,7 @@ a{
         font-size: 12px;
     }
     
-    a{
+    .titulo{
         font-size: 16px;
     }
 }
@@ -248,7 +248,7 @@ a{
         font-size: 10px;
     }
     
-    a{
+    .titulo{
         font-size: 12px;
     }
 }
