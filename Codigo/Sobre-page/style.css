@@ -80,8 +80,7 @@ header {
 }
 
 .logo img {
-    height: 80px !important;
-    width: 80px !important;
+    height: 80px;
 }
 
 .main {
@@ -115,6 +114,7 @@ header {
         width: 50%;
         margin-left: 25%;
     }
+}
     .logo img{
         width: 100%;
         height: 100%;
