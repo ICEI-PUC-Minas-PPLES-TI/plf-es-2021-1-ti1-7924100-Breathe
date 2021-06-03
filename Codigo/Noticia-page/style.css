@@ -129,9 +129,7 @@ p{
     border: 2px solid #043e94;
     border-radius: 8px;
     margin-bottom: 5px;
-    right:520px !important;
-   
-    
+    right:520px !important;    
 }
 
 #mensagem{
@@ -178,6 +176,7 @@ p{
     .mensagem{ 
         display: none;
     }
+
     .carrossel_mobile {
         display: block;
         width: 200px;
