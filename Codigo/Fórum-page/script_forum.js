@@ -1,7 +1,25 @@
-
-let texto = 'Breathe - Todos os direitos reservados - 2021';
-let imagem = 'img/logo2.png';
-let txtHTML = `<div class="row"><div class="col-9 col-lg-11 footer_area">${texto}</div><div class="col-3 col-lg-1"><img src="${imagem}"></div></div>`;
-let headerHTML = '<div class="row"><div class="col-12 header_area"><div class="row"><div class="col-12 col-sm-12 col-md-2 col-lg-2 logo"><img src="img/logo1.png" class="logo"></div><div class="col-12 col-sm-12 col-md-10 col-lg-10 menu_area"><nav class="nav nav-pills nav-fill flex-column flex-sm-row"><a class="flex-sm-fill text-sm-center nav-link active" href="#">HOME</a><a class="flex-sm-fill text-sm-center nav-link" href="#">SOBRE</a><a class="flex-sm-fill text-sm-center nav-link" href="#">PROFISSIONAIS</a><a class="flex-sm-fill text-sm-center nav-link" href="#">NOTÍCIAS</a><a class="flex-sm-fill text-sm-center nav-link" href="#">FÓRUM</a><a class="flex-sm-fill text-sm-center nav-link" href="#">APOIO</a><div class="texto_pes"><i class="material-icons" ></i><input  type="text" placeholder="Search"><button class="botao1">Pesquisar</button></div></nav></div></div></div>';
-document.querySelector('.header').innerHTML = headerHTML;
-document.querySelector('#rodape').innerHTML = txtHTML;
+let txt = 'Breathe - Todos os direitos reservados - 2021';
+let img = 'img/logo2.png';
+let dropdownHTML = `<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Opções</button>
+<ul class="dropdown-menu">
+    <button class="btn btn-primary has-icon btn-block" type="button" data-toggle="modal" data-target="#threadModal">
+        Nova Discussão
+    </button>
+    <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon active">Todos os Tópicos</a>
+    <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Populares desta semana</a>
+    <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Populares</a>
+    <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Resolvidos</a>
+    <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Não resolvidos</a>
+    <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Sem resposta</a>
+    <a href="biblioteca.html"><button class="btn btn-primary has-icon btn-block" type="button" data-toggle="modal" data-target="#threadModal">Biblioteca</button></a>
+</ul>`;
+let footerHTML = `<div class="row">
+<div class="col-9 col-lg-11 footer_area">
+    ${txt}
+</div>
+<div class="col-3 col-lg-1">
+    <img src="${img}">
+</div>
+</div>`;
+document.querySelector('.footer').innerHTML = footerHTML;
+document.querySelector('.dropdown').innerHTML = dropdownHTML;
