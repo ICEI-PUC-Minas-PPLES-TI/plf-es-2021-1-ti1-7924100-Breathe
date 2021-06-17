@@ -103,7 +103,7 @@ body {
   width: 250px;
   margin-left: 5px;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 b{
@@ -116,13 +116,13 @@ b{
   color:#001330;
   display: flex;
   text-decoration: none;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .fas{
   color:#001330;
   position: absolute;
-  left: 300px;
+  left: 310px;
   position: absolute;
   margin-top: 1.5vh;
 }
@@ -136,7 +136,7 @@ b:hover{
 }
 
 .tema{
-  font: large;
+  font-size: 60px;
   color:#082f6a;
   text-align: center;
 }
@@ -208,7 +208,7 @@ section{
     left: 12%;
     background: #0d6dfd;
     padding: 6px;
-    color:#C4BFE7;
+    color:#f5f4f8;
     font-size: 12px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -229,7 +229,7 @@ section{
 }
 
 .card-desc h3 {
-	color: #000000;
+	color:#082f6a;
     font-weight: 600;
     font-size: 1.5em;
     line-height: 1.3em;
@@ -239,7 +239,7 @@ section{
 }
 
 .card-desc p {
-	color: #4d4d4d;
+	color:#1b3863;
   font-size: 14px;
 	font-weight: 400;
 	font-size: 1em;
@@ -251,7 +251,7 @@ section{
 }
 .btn-card{
 	background-color:#0d6dfd;
-	color:#F2D7E0;
+	color:#f5f4f8;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     padding: .50rem 1rem;
     font-size: .81rem;
@@ -313,5 +313,21 @@ a.btn-card {
       width: 100%;
       height: 100%;
   }
+
+  .card-content{
+    margin-bottom: 10px;
+    font-size: .80rem;
+    margin: 15px;
+  }
+
+  .foto_perfil{
+    height: 80px;
+    width: 80px;
+  }
+
+  .tema{
+    font-size: 40px;
+  }
+
 }
 

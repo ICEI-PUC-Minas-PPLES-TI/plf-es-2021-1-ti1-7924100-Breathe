@@ -26,7 +26,6 @@ header {
     text-align: center;
 }
 
-
 .texto_pes{
     display: flex;
     position: relative;
@@ -121,6 +120,7 @@ header {
     }
 }
 /*DICAS*/
+
 .titulo{
     color: white;
     text-justify: auto;
@@ -131,7 +131,6 @@ header {
     color: white;
     text-justify: auto;
     text-align: center;
-    font-size: ;
 }
 .card{
     margin: 50px;
@@ -140,7 +139,6 @@ header {
 }
 .cardimage{
     width: 100%;
-    
 }
 .checked {
     color: white;
@@ -156,12 +154,34 @@ a:hover {
   }
   
   .previous {
-    
     color: black;
   }
+
   .card-text{
       text-justify: auto;
       text-align: justify;
-      
   }
   
+  /*  Favoritar */
+
+  
+.card-img span h4{
+    font-size: 15px;
+    margin:0;
+    padding:15px 12px;
+    line-height: 0;
+    text-align: center;
+}
+
+.card-img span {
+	position: absolute;
+    top: 20%;
+    left: 10%;
+    background: #0d6dfd;
+    padding: 6px;
+    color:#f5f4f8;
+    font-size: 12px;
+    transform: translate(-50%,-50%);
+}
+
+.
