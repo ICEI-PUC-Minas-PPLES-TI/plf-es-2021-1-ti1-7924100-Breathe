@@ -94,11 +94,22 @@ body {
 
 /* Conta */
 
+.perfil{
+  background-color:#568ca9;
+  }
+
 .foto_perfil{
   height: 250px;
   width: 250px;
+  margin-left: 15px;
+  margin-right: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+b{
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .font_conta{
@@ -106,12 +117,15 @@ body {
   color: #082f6a;
   display: flex;
   text-decoration: none;
+  margin-bottom: 5px;
 }
 
 .fas{
   color:#082f6a;
   position: absolute;
   left: 300px;
+  position: absolute;
+  margin-top: 1.5vh;
 }
 
 .fas:hover{
@@ -127,7 +141,6 @@ b:hover{
   color:#001330;
   align-items: center;
 }
-
 
 /* Rodapé */
 
