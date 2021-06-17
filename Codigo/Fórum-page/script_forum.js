@@ -1,0 +1,7 @@
+
+let texto = 'Breathe - Todos os direitos reservados - 2021';
+let imagem = 'img/logo2.png';
+let txtHTML = `<div class="row"><div class="col-9 col-lg-11 footer_area">${texto}</div><div class="col-3 col-lg-1"><img src="${imagem}"></div></div>`;
+let headerHTML = '<div class="row"><div class="col-12 header_area"><div class="row"><div class="col-12 col-sm-12 col-md-2 col-lg-2 logo"><img src="img/logo1.png" class="logo"></div><div class="col-12 col-sm-12 col-md-10 col-lg-10 menu_area"><nav class="nav nav-pills nav-fill flex-column flex-sm-row"><a class="flex-sm-fill text-sm-center nav-link active" href="#">HOME</a><a class="flex-sm-fill text-sm-center nav-link" href="#">SOBRE</a><a class="flex-sm-fill text-sm-center nav-link" href="#">PROFISSIONAIS</a><a class="flex-sm-fill text-sm-center nav-link" href="#">NOTÍCIAS</a><a class="flex-sm-fill text-sm-center nav-link" href="#">FÓRUM</a><a class="flex-sm-fill text-sm-center nav-link" href="#">APOIO</a><div class="texto_pes"><i class="material-icons" ></i><input  type="text" placeholder="Search"><button class="botao1">Pesquisar</button></div></nav></div></div></div>';
+document.querySelector('.header').innerHTML = headerHTML;
+document.querySelector('#rodape').innerHTML = txtHTML;
