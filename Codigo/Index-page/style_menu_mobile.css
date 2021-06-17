@@ -1,0 +1,23 @@
+.menu_mobile,
+.btn_mobile {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .menu_mobile,
+    .btn_mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .menu_mobile {
+        margin-left: 30%;
+        margin-top: 5%;
+        display: block;
+    }
+
+    .menu_area {
+        display: none;
+    }
+}
