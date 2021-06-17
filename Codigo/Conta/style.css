@@ -94,40 +94,189 @@ body {
 
 /* Conta */
 
+.perfil{
+  background-color:#0d6dfd;
+  }
+
 .foto_perfil{
   height: 250px;
   width: 250px;
+  margin-left: 5px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
+b{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .font_conta{
   font-size:larger;
-  color: #082f6a;
+  color:#001330;
   display: flex;
   text-decoration: none;
+  margin-bottom: 5px;
 }
 
 .fas{
-  color:#082f6a;
+  color:#001330;
   position: absolute;
   left: 300px;
+  position: absolute;
+  margin-top: 1.5vh;
 }
 
 .fas:hover{
-  color: #376279;
+  color:#ffffff;
 }
 
 b:hover{
-  color: #376279;
+  color:#ffffff;
 }
 
 .tema{
   font: large;
-  color:#001330;
-  align-items: center;
+  color:#082f6a;
+  text-align: center;
 }
 
+/* Botão */
+
+.carregar_mais {
+  padding: 7px 18px; 
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.btndir{
+  text-align:right;
+  margin-right: 30px;
+  margin-bottom: 5px;
+}
+
+.carregar_mais{
+  background-color:#0d6dfd; 
+  color:#ffffff
+} 
+
+.carregar_mais :hover{
+  background:#082f6a ;
+  color:#ffffff;
+}
+
+.carregar_mais b{ 
+  margin-left: -1vh;
+}
+
+.carregar_mais i{
+  position: absolute;
+  margin-top: 0.6vh;
+  margin-left: -1vh;
+} 
+
+/* Card de Notícias */
+
+section{
+    padding: 20px 0;
+}
+
+.card-content {
+	background:#fce1ea;
+	border: 4px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.card-img {
+	position: relative;
+	overflow: hidden;
+	border-radius: 0;
+	z-index: 1;
+}
+
+.card-img img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.card-img span {
+	position: absolute;
+    top: 15%;
+    left: 12%;
+    background: #0d6dfd;
+    padding: 6px;
+    color:#C4BFE7;
+    font-size: 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transform: translate(-50%,-50%);
+}
+.card-img span h4{
+        font-size: 15px;
+        margin:0;
+        margin-left: 15px;
+        padding:12px 4px;
+        line-height: 0;
+}
+.card-desc {
+	padding: 1.25rem;
+}
+
+.card-desc h3 {
+	color: #000000;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.card-desc p {
+	color: #4d4d4d;
+  font-size: 14px;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+.btn-card{
+	background-color:#0d6dfd;
+	color:#F2D7E0;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: .50rem 1rem;
+    font-size: .81rem;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    margin: 0;
+    border: 0;
+    -webkit-border-radius: .125rem;
+    border-radius: .125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    border-radius: 5px;
+}
+.btn-card:hover {
+  background:#082f6a ;
+  color:#ffffff;
+}
+a.btn-card {
+    text-decoration: none;
+}
 
 /* Rodapé */
 
