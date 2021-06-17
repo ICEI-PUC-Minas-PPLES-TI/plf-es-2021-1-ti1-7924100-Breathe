@@ -1,0 +1,168 @@
+/* Menu */
+
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #F2D7E0;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.nav-link {
+  border-radius: 5%;
+  padding: 5px 5px;
+  color: black;
+}
+
+.nav-link:hover {
+  background-color: #0d6dfd;
+  color: white;
+}
+
+.header nav {
+  padding-top: 20px;
+}
+
+.botao1 {
+  background-color: rgba(0, 0, 0);
+  border-radius: 5%;
+  height: 30px;
+  margin-left: 5px;
+  border: none;
+  color: white;
+}
+
+.botao1:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.texto_pes{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto_pes i{
+  font-size: 18px;
+  position: absolute;
+  left: 5%;
+  color: black;
+}
+
+.texto_pes input{
+  padding: 2px 3px;
+  margin-left: 5px;
+  background:transparent;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5px;
+}
+
+.texto_pes:focus-within input::placeholder{
+  visibility: hidden;
+}
+
+.texto_pes:focus-within i{
+  visibility: hidden;
+}
+
+.texto_pes input{
+  color: black;
+}
+
+.texto_pes input::placeholder{
+  color: black;
+  padding-left: 20px;
+}
+
+/* Main */
+
+body {
+  background-color: #C4BFE7;
+}
+
+.main {
+  background-color: #78ABC6;
+}
+
+/* Conta */
+
+.foto_perfil{
+  height: 250px;
+  width: 250px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.font_conta{
+  font-size:larger;
+  color: #082f6a;
+  display: flex;
+  text-decoration: none;
+}
+
+.fas{
+  color:#082f6a;
+  position: absolute;
+  left: 300px;
+}
+
+.fas:hover{
+  color: #376279;
+}
+
+b:hover{
+  color: #376279;
+}
+
+.tema{
+  font: large;
+  color:#001330;
+  align-items: center;
+}
+
+
+/* Rodapé */
+
+.footer {
+  height: 80px;
+  background-color: #F2D7E0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer img {
+  height: 80px;
+}
+
+.footer_area {
+  padding-top: 30px;
+}
+
+/* Media Screen */
+
+@media screen and (max-width:1024px) {
+  .texto_pes {
+      display: none;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .logo {
+      width: 50%;
+      margin-left: 25%;
+  }
+
+  .logo img{
+      width: 100%;
+      height: 100%;
+  }
+}
+
