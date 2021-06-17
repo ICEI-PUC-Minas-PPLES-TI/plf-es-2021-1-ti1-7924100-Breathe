@@ -164,24 +164,23 @@ a:hover {
   
   /*  Favoritar */
 
-  
-.card-img span h4{
-    font-size: 15px;
-    margin:0;
-    padding:15px 12px;
-    line-height: 0;
-    text-align: center;
-}
-
-.card-img span {
+.card-img button{
 	position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 15%;
+    left: -0.1%;
     background: #0d6dfd;
     padding: 6px;
     color:#f5f4f8;
-    font-size: 12px;
-    transform: translate(-50%,-50%);
+    border: 0;
+    
 }
 
-.
+.fas{
+    color: #f5f4f8;
+    align-items: center;
+    margin: 10px;
+}
+
+.fas:hover{
+    color: #e61010;
+}
