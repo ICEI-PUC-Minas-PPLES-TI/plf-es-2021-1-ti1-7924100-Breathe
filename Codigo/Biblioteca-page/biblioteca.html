@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <title>Breathe</title>
+  <link rel="stylesheet" href="biblioteca.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="icon" href="img/logo2.png">
+</head>
+
+<body>
+
+  <header class="container header">
+    <div class="row">
+      <div class="col-12 header_area">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-2 col-lg-2 logo">
+            <img src="img/logo1.png" class="logo">
+          </div>
+          <div class="col-12 col-sm-12 col-md-10 col-lg-10 menu_area">
+            <nav class="nav nav-pills nav-fill flex-column flex-sm-row">
+              <a class="flex-sm-fill text-sm-center nav-link active" href="#">HOME</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">SOBRE</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">PROFISSIONAIS</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">NOTÍCIAS</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">FÓRUM</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">APOIO</a>
+              <div class="texto_pes">
+                <i class="material-icons"></i>
+                <input type="text" placeholder="Search">
+                <button class="botao1">Pesquisar</button>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <!--Corpo da Página-->
+
+  <main class="container main">
+    <h3 class="titulo">Biblioteca Breathe</h3> <br>
+    <h5 class="textans">Está pagina etá reservada para indicações de livros e guias de auto-ajuda na nossa biblioteca
+      virtual disponivel aos nossos usuários.</h5>
+    <div id="livros" class="row"></div>
+    <style>
+    .Favorito:active {
+      color: rgb(181, 3, 3);
+  }</style>
+      <!--- 
+      <div class="col-sm-6">
+        <div class="card" style="text-align: center;">
+          <div class="card-body">
+            <h5 class="card-title">Livre de Ansiedade (2011), de Robert L. Leahy</h5><br>
+            <div class="card-img">
+              <img src="img/Livre-de-Ansiedade.jpg.webp" alt="cardimage" style="width: 200px;">
+              <button class="Favorito">
+                <i class="fas fa-heart fa-2x"></i>
+              </button>
+            </div>
+            <p class="card-text">Esta obra investiga as origens da ansiedade e ensina como levar uma vida menos
+              estressante. Utilizando os métodos propostos pelo autor, baseados nos melhores tratamentos psicológicos
+              disponíveis, o leitor pode conquistar uma vida livre de apreensão e tensão relacionadas à ansiedade.
+              Robert L. Leahy é um dos mais respeitados terapeutas cognitivos do mundo. O autor traz para este livro o
+              conhecimento acumulado de 25 anos de trabalho, durante os quais ajudou as pessoas a superarem a ansiedade.
+              Leahy é diretor do American Institute of Cognitive Therapies e presidente da International Association for
+              Behavioral and Cognitive Therapies e da Academy of Cognitive Therapy.<br>
+            </p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="text-align: center;">
+          <div class="card-body">
+            <h5 class="card-title">Rápido e Devagar: Duas Formas de Pensar (2011), de Daniel Kahneman</h5>
+            <div class="card-img">
+              <img src="img/Rapido-e-Devagar.jpg.webp" alt="cardimage" style="width: 200px;">
+              <button class="Favorito">
+                <i class="fas fa-heart fa-2x"></i>
+              </button>
+            </div>
+            <p class="card-text">Neste livro, o ganhador do Prêmio Nobel de Economia, Daniel Kahneman, reúne suas
+              conclusões tiradas ao longo de muitos anos de pesquisa sobre a mente humana. Contrapondo a ideia de que a
+              nossa tomada de decisões é essencialmente racional, ele explica as duas formas pelas quais o pensamento
+              humano se desenvolve: uma é rápida, intuitiva e emocional; enquanto a outra é mais lenta, deliberativa e
+              lógica. Kahneman expõe as capacidades extraordinárias do pensamento rápido e revela o peso da intuição no
+              processo de tomada de decisões. Além disso, o autor oferece insights esclarecedores sobre as escolhas nos
+              negócios e na vida pessoal, e mostra diferentes técnicas que podem ser usadas contra as falhas mentais
+              que, muitas vezes, nos colocam em situações difíceis.<br>
+            </p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="text-align: center;">
+          <div class="card-body">
+            <h5 class="card-title">Vencendo a Ansiedade e a Preocupação Com a Terapia Cognitivo-Comportamental (2009),
+              de David A. Clark e Aaron T. Beck</h5>
+              <div class="card-img">
+                <img src="img/Vencendo-a-Ansiedade.jpg.webp" alt="cardimage" style="width: 200px;">
+                <button class="Favorito">
+                  <i class="fas fa-heart fa-2x"></i>
+                </button>
+              </div>
+            <p class="card-text">
+              Este é um manual voltado ao paciente e apresenta estratégias práticas para identificar gatilhos de
+              ansiedade, desafiar os pensamentos e crenças que levam à angústia, enfrentar com segurança as situações
+              temidas, e afrouxar as garras da ansiedade. Ele se baseia na terapia cognitivo-comportamental, abordagem
+              terapêutica desenvolvida e testada há mais de 50 anos pelo pesquisador-clínico Aaron T. Beck, um dos
+              autores. Dr. Beck é professor de psiquiatria na Universidade da Pensilvânia e presidente do Instituto Beck
+              de Terapia Cognitivo-Comportamental. Juntamente ao pesquisador, participa do manual o dr. David A. Clark,
+              professor de Psicologia da Universidade de New Brunswick, no Canadá, e fundador da Academy of Cognitive
+              Therapy.<br>
+            </p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    -->
+    <h5 class="textans">CASO ESTEJA INTERESSADO EM COMPARTILHAR ALGUM LIVRO PARA NOSSA BIBLIOTECA PORFAVOR SE APRESENTE
+      NO FORUM DO SITE! TENHA UM BOM DIA!</h5>
+    <div style="text-align: center;" <a href="#" class="previous">&laquo; Anterior</a>
+      <a href="#" class="next">Próximo &raquo;</a>
+    </div>
+  </main>
+  <footer class="container footer">
+    <div class="row">
+      <div class="col-9 col-lg-11 footer_area">
+        Breathe - Todos os direitos reservados - 2021
+      </div>
+      <div class="col-3 col-lg-1">
+        <img src="img/logo2.png">
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" ></script>
+  <script>src="https://code.jquery.com/jquery-3.6.0.min.js"</script>
+  <script src="biblioteca.js"></script>
+
+</body>
+
+</html>
