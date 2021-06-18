@@ -119,7 +119,7 @@ b{
   margin-bottom: 5px;
 }
 
-.fas{
+.special{
   color:#001330;
   position: absolute;
   left: 300px;
@@ -127,7 +127,7 @@ b{
   margin-top: 1.5vh;
 }
 
-.fas:hover{
+.special:hover{
   color:#ffffff;
 }
 

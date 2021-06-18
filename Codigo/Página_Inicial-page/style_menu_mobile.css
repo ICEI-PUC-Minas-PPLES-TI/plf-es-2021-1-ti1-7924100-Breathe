@@ -4,6 +4,10 @@
 }
 
 @media screen and (max-width:800px) {
+    .menu_area {
+        display: block;
+    }
+    
     .menu_mobile,
     .btn_mobile {
         display: none;

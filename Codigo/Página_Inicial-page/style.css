@@ -282,6 +282,7 @@ header {
 
     .logo {
         width: 50%;
+        margin-left: 25%;
     }
 
     .logo img{

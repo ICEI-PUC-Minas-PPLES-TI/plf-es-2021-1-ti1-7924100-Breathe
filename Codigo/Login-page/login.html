@@ -11,7 +11,9 @@
       crossorigin="anonymous"
     />
     <title>Breathe</title>
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_menu_mobile.css">
     <link rel="icon" href="img/logo2.png" />
     <link
       rel="stylesheet"
@@ -27,22 +29,33 @@
       <div class="row">
         <div class="col-12 header_area">
           <div class="row">
-            <div class="col-12 col-sm-12 col-md-2 col-lg-2 logo">
-                <img src="img/logo1.png" class="logo">
-            </div>
-            <div class="col-12 col-sm-12 col-md-10 col-lg-10 menu_area">
-              <nav class="nav nav-pills nav-fill flex-column flex-sm-row">
-                  <a class="flex-sm-fill text-sm-center nav-link active" href="#">HOME</a>
-                  <a class="flex-sm-fill text-sm-center nav-link" href="#">SOBRE</a>
-                  <a class="flex-sm-fill text-sm-center nav-link" href="#">PROFISSIONAIS</a>
-                  <a class="flex-sm-fill text-sm-center nav-link" href="#">NOTÍCIAS</a>
-                  <a class="flex-sm-fill text-sm-center nav-link" href="#">FÓRUM</a>
-                  <div class="texto_pes">
-                      <i class="material-icons" ></i>
-                      <input  type="text" placeholder="Search">
-                      <button class="botao1">Pesquisar</button>
-                  </div>
-              </nav>
+            <div class="row">
+              <div class="col-10"></div>
+              <div class="col-8 menu_mobile">
+                  <button id="btn_mobile" class="btn_mobile"></button>
+                  <label class="icon float-end" for="btn_mobile">
+                      <i class="fas fa-bars fa-3x"></i>
+                  </label>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-12 col-sm-12 col-md-2 col-lg-2 logo">
+                  <img src="img/logo1.png" class="logo">
+              </div>
+              <div id="menu_area" class="col-12 col-sm-12 col-md-10 col-lg-10 menu_area">
+                <nav class="nav nav-pills nav-fill flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link active" href="#">HOME</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#">SOBRE</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#">PROFISSIONAIS</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#">NOTÍCIAS</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#">FÓRUM</a>
+                    <div class="texto_pes">
+                        <i class="material-icons" ></i>
+                        <input  type="text" placeholder="Search">
+                        <button class="botao1">Pesquisar</button>
+                    </div>
+                </nav>
+              </div>
             </div>
         </div>
       </div>
@@ -210,5 +223,8 @@
       integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
       crossorigin="anonymous"
     ></script>
+
+    <script src="script_menu_mobile.js"></script>
+
   </body>
 </html>
