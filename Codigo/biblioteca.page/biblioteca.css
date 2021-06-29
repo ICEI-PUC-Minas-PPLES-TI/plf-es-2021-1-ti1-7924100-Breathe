@@ -164,3 +164,24 @@ a:hover {
       
   }
   
+  .card-img button{
+	position: absolute;
+    top: 15%;
+    left: -0.1%;
+    background: #0d6dfd;
+    padding: 6px;
+    color:#f5f4f8;
+    border: 0;
+    
+}
+
+.fas{
+    color: #f5f4f8;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.Favorito.ativo {
+    color: rgb(181, 3, 3) !important;
+}
