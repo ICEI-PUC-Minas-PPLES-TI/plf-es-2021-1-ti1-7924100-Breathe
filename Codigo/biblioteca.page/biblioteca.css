@@ -168,7 +168,7 @@ a:hover {
 	position: absolute;
     top: 15%;
     left: -0.1%;
-    background: #0d6dfd;
+    background: rgb(220, 54, 54);
     padding: 6px;
     color:#f5f4f8;
     border: 0;
@@ -182,6 +182,10 @@ a:hover {
 }
 
 
-.Favorito.ativo {
-    color: rgb(181, 3, 3) !important;
+.fas:active{
+    color: rgb(220, 54, 54);
+}
+
+.card-img button:active{
+    background: #f5f4f8;
 }

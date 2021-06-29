@@ -69,7 +69,7 @@ livros.forEach(livro=>{
         <h5 class="card-title">${livro.titulo}</h5>
         <div class="card-img">
         <img src="${livro.img}" style="width: 200px;" alt="cardimage">
-        <button class="Favorito" id="coracao${livro.id}" onclick="favoritar(${livro.id})">
+        <button class="Favorito">
             <i class="fas fa-heart fa-2x"></i>
         </button>
         </div>
@@ -94,7 +94,6 @@ $('#livros > .livro .Favorito').on('click', function () {
     localStorage.setItem('favoritos', JSON.stringify(favoritos))
 })++
 
-function favoritar(idlivros) {
-    let coracao=document.querySelector(`button#coracao${idlivros}`);
-    coracao.classList.add('ativo');
-}
+function myFunction(x) {
+    x.classList.toggle("fa:active");
+  }
