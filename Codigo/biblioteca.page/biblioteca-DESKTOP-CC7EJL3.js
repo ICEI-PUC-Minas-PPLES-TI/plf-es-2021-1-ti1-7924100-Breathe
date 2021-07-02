@@ -27,39 +27,35 @@ let livros = [
         id: 4,
         img: './img/Meus-Tempos-de-Ansiedade.jpg.webp',
         titulo: 'Meus Tempos de Ansiedade: Medo, Esperança, Terror e a Busca da Paz de Espírito',
-        autor: 'Scott Stossel',
+        autor:
         descricao: '>No dia de seu casamento, Scott Stossel viveu os momentos mais aterrorizantes de sua vida. Tudo aconteceu nos conformes, exceto pelo fato de que ele passou a cerimônia tremendo de pavor e encharcado de suor. Na noite que deveria ser a mais importante e especial de sua vida, ele só pensava na morte, em desaparecer. A partir de sua própria vivência da ansiedade, o editor da revista “Atlantic” investiga essa doença que, se não existia como categoria diagnóstica 35 anos atrás, hoje é o mais comum distúrbio mental. Entre o relato íntimo e teorias científicas, o autor oferece uma história de todas as perspectivas, da médica à filosófica. ',
     },
 
     {
         id: 5,
         img: './img/Atencao-Plena.jpg.webp',
-        titulo: 'Atenção Plena: Mindfulness',
-        autor: 'Mark Williams e Danny Penman',
+        titulo: 'Atenção Plena: Mindfulness (2011), de Mark Williams e Danny Penman',
         descricao: '“Atenção Plena: Mindfulness” e os áudios de meditação disponibilizados junto com o livro apresentam uma série de práticas simples para expandir a consciência e quebrar o ciclo de ansiedade, estresse, infelicidade e exaustão. Recomendado pelo Instituto Nacional de Excelência Clínica do Reino Unido, este método ajuda o leitor a encontrar a tranquilidade, permitindo que ele enfrente os desafios da vida com uma coragem renovada. Mais do que uma técnica de meditação, a atenção plena (ou mindfulness) é um estilo de vida que consiste em estar aberto à experiência presente, observando seus pensamentos sem julgamentos. Ao todo, são oito semanas com exercícios e meditações diárias.',
     },
 
     {
         id: 6,
         img: './img/Livre-de-Ansiedade.jpg.webp',
-        titulo: 'Livre de Ansiedade',
-        autor:'Robert L. Leahy',
+        titulo: 'Livre de Ansiedade (2011), de Robert L. Leahy',
         descricao: 'Esta obra investiga as origens da ansiedade e ensina como levar uma vida menos estressante. Utilizando os métodos propostos pelo autor, baseados nos melhores tratamentos psicológicos disponíveis, o leitor pode conquistar uma vida livre de apreensão e tensão relacionadas à ansiedade. Robert L. Leahy é um dos mais respeitados terapeutas cognitivos do mundo. O autor traz para este livro o conhecimento acumulado de 25 anos de trabalho, durante os quais ajudou as pessoas a superarem a ansiedade.  Leahy é diretor do American Institute of Cognitive Therapies e presidente da International Association for Behavioral and Cognitive Therapies e da Academy of Cognitive Therapy.',
     },
 
     {
         id: 7,
         img: './img/Rapido-e-Devagar.jpg.webp" alt="cardimage',
-        titulo: 'Rápido e Devagar: Duas Formas de Pensa',
-        autor:'Daniel Kahneman',
+        titulo: 'Rápido e Devagar: Duas Formas de Pensar (2011), de Daniel Kahneman',
         descricao: 'Neste livro, o ganhador do Prêmio Nobel de Economia, Daniel Kahneman, reúne suas conclusões tiradas ao longo de muitos anos de pesquisa sobre a mente humana. Contrapondo a ideia de que a nossa tomada de decisões é essencialmente racional, ele explica as duas formas pelas quais o pensamento humano se desenvolve: uma é rápida, intuitiva e emocional; enquanto a outra é mais lenta, deliberativa e lógica. Kahneman expõe as capacidades extraordinárias do pensamento rápido e revela o peso da intuição no processo de tomada de decisões. Além disso, o autor oferece insights esclarecedores sobre as escolhas nos negócios e na vida pessoal, e mostra diferentes técnicas que podem ser usadas contra as falhas mentais que, muitas vezes, nos colocam em situações difíceis.',
     },
 
     {
         id: 8,
         img: './img/Vencendo-a-Ansiedade.jpg.webp',
-        titulo: 'Vencendo a Ansiedade e a Preocupação Com a Terapia Cognitivo-Comportamental',
-        autor: 'David A. Clark e Aaron T. Beck',
+        titulo: 'Vencendo a Ansiedade e a Preocupação Com a Terapia Cognitivo-Comportamental (2009), de David A. Clark e Aaron T. Beck',
         descricao: 'Este é um manual voltado ao paciente e apresenta estratégias práticas para identificar gatilhos de ansiedade, desafiar os pensamentos e crenças que levam à angústia, enfrentar com segurança as situações temidas, e afrouxar as garras da ansiedade. Ele se baseia na terapia cognitivo-comportamental, abordagem terapêutica desenvolvida e testada há mais de 50 anos pelo pesquisador-clínico Aaron T. Beck, um dos autores. Dr. Beck é professor de psiquiatria na Universidade da Pensilvânia e presidente do Instituto Beck de Terapia Cognitivo-Comportamental. Juntamente ao pesquisador, participa do manual o dr. David A. Clark, professor de Psicologia da Universidade de New Brunswick, no Canadá, e fundador da Academy of Cognitive Therapy.',    
     },
 ];
@@ -74,18 +70,17 @@ livros.forEach(livro=>{
     let html = `<div data-id="${livro.id}" class="col-sm-6 livro">
     <div class="card" style="text-align: center;">
     <div class="card-body">
-        <h1 class="card-title">${livro.titulo}</h1>
-        <h2 class="card-title">${livro.autor}</h2>
+        <h5 class="card-title">${livro.titulo}</h5>
+        <h5 class="card-title">${livro.autor}</h5>
         <div class="card-img">
         <img src="${livro.img}" style="width: 200px;" alt="cardimage">
         <button class="Favorito">
             <i class="fas fa-heart fa-2x"></i>
         </button>
-        <button type="button" class="collapsible">Descrição</button>
-        <div class="content">
+        </div>
         <p class="card-text">
          ${livro.descricao}
-        <br>
+         <br>
         </p>
         <a href="#" class="btn btn-primary">Comprar</a>
     </div>
