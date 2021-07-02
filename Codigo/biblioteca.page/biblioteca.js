@@ -93,7 +93,3 @@ $('#livros > .livro .Favorito').on('click', function () {
 
     localStorage.setItem('favoritos', JSON.stringify(favoritos))
 })++
-
-function myFunction(x) {
-    x.classList.toggle("fa:active");
-  }
