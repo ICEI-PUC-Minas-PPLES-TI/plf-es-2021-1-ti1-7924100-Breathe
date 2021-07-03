@@ -157,3 +157,29 @@ header {
     height: 100%;
   }
 }
+
+.Favorito{
+	position: absolute;
+    top: 40%;
+    left: -0.1%;
+    background: rgb(220, 54, 54);
+    padding: 6px;
+    color:#f5f4f8;
+    border: 0;
+    
+}
+
+.fas{
+    color: #f5f4f8;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.fas:active{
+    color: rgb(220, 54, 54);
+}
+
+.Favorito:active{
+    background: #f5f4f8;
+}

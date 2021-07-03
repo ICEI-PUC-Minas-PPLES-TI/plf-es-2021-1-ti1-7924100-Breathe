@@ -2,36 +2,11 @@ onload = () => {
   exibeEventos();
 };
 
-var dbEventos = {
-  eventos: [
-    {
-      evento: "Palestra sobre saúde mental durante pandemia",
-      horario: "18:00",
-      localizacao: "Youtube",
-      resumo:
-        "Nessa palestra será tratado a questão de como a pandemia afetou as pessoas no trabalho e como o dia a dia passou a potencializar problemas como ansiedade e depressão.",
-      link: "https://www.youtube.com",
-    },
-
-    {
-      evento: "Grupo de ajuda",
-      horario: " 13:00",
-      localizacao: "Hospital Geral César Cals",
-      resumo:
-        "Esse encontro foi planejado para possibilitar uma forma de apoio as pessoas como forma de conscientizalas sobre a importancia da vida.",
-      link: "http://www.hgcc.ce.gov.br/#",
-    },
-
-    {
-      evento: "Palestra: Depressão e Ansiedade, o que você deve saber",
-      horario: "15:00",
-      localizacao: "telessaude.ifes.edu.br",
-      resumo:
-        "Nessa palestra, Marluce Michele de Siqueira irá apresentar as questões relacionadas a ansiedade e depressão na contemporaneidade e estratégias para combatermos essas enfermidades do século 21.",
-      link: "telessaude.ifes.edu.br",
-    },
-  ],
-};
+let favoritos = localStorage.getItem('eventos-favoritos');
+if (!favoritos)
+    favoritos = [];
+else
+    favoritos = JSON.parse(favoritos);
 
 function exibeEventos() {
   let evento;
@@ -41,25 +16,46 @@ function exibeEventos() {
   let link;
   let textoHTML = "";
 
-  for (let i = 0; i < dbEventos.eventos.length; i++) {
-    let dados = dbEventos.eventos[i];
-    evento = dados.evento;
-    horario = dados.horario;
-    localizacao = dados.localizacao;
-    resumo = dados.resumo;
-    link = dados.link;
-    textoHTML = `
-      <p class="col-8">
-        <strong>Evento: </strong>${evento}<br>
-        <strong>Horario: </strong>${horario}<br>
-        <strong>Localização: </strong>${localizacao}<br>
-        <strong>Resumo: </strong>${resumo}<br>
-        <strong>Link: </strong>${link}<br>
-      </p>
-      `;
+  for (let i = 0; i < eventos.length; i++) {
+    let dados = eventos[i];
 
-    document.getElementById(`f${i}`).innerHTML = textoHTML;
+    let {id, evento, horario, localizacao, resumo, link} = dados;
+
+    textoHTML = `
+    <div data-id="${id}"  class="row anuncio evento">
+        <img class="col-4" src="${img}" alt="foto 1">
+        <div class="col-8">
+            <p class="col-8">
+                <strong>Evento: </strong>${evento}<br>
+                <strong>Horario: </strong>${horario}<br>
+                <strong>Localização: </strong>${localizacao}<br>
+                <strong>Resumo: </strong>${resumo}<br>
+                <strong>Link: </strong>${link}<br>
+            </p>
+            <button class="Favorito">
+                  <i class="fas fa-heart fa-2x"></i>
+            </button>
+        </div>
+    </div>`;
+
+    $('#eventos').append(textoHTML)
   }
+
+  $('#eventos .evento .Favorito').on('click', function(){
+    let $el = $(this);
+    let parent = $el.parents('.evento');
+    let id = parent.data('id');
+    $el.addClass('active');
+
+    const idx = favoritos.indexOf(id);
+
+    if(idx > -1)
+        favoritos.splice(idx, 1)
+    else
+        favoritos.push(id)
+    
+    localStorage.setItem('eventos-favoritos', JSON.stringify(favoritos))
+  })
 }
 
 // Conteúdo do Site - Fim //

@@ -12,7 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
-<script src="divulgacao_eventos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="eventos.js"></script>
+    <script src="divulgacao_eventos.js"></script>
 
 </head>
 <body>
@@ -46,28 +48,8 @@
     <main onload="init()" class="container main">
             <div class="row">
                     <div class="col-8">
-                        <div class="row">
-                            <div  class="row anuncio1">
-                                <img class="col-4" src="img/banner-1.jpg" alt="foto 1">
-                                <div id="f0" class="col-8">
-                                    
-                                </div>
-                            </div>
-    
-                            <div class="row anuncio2">
-                                <img class="col-4" src="img/banner-2.jpg" alt="foto 2">
-                                <div id="f1" class="col-8">
-                                    
-                                    
-                                </div>
-                            </div>
-    
-                            <div class="row anuncio3">
-                                <img class="col-4" src="img/banner-3.jpeg" alt="foto 3">
-                                <div id="f2" class="col-8">
-                                    
-                                </div>
-                            </div>
+                        <div class="row" id="eventos">
+                            
                         </div>
                     </div>
     

@@ -148,11 +148,16 @@ p{
     text-align: center;
 }
 .card{
-    margin: 50px;
     background-color: #3e6072 ;
     color: white;
 }
-
+.cardimage{
+    width: 100%;
+    
+}
+.checked {
+    color: white;
+}
 a {
     text-decoration: none;
     display: inline-block;
@@ -173,10 +178,10 @@ a:hover {
       color: black;
   }
   
-.Favorito{
+  .card-img button{
 	position: absolute;
-    top: 45.5%;
-    left: 28.5%;
+    top: 15%;
+    left: -0.1%;
     background: rgb(220, 54, 54);
     padding: 6px;
     color:#f5f4f8;
@@ -195,60 +200,48 @@ a:hover {
     color: rgb(220, 54, 54);
 }
 
-.Favorito:active{
+.card-img button:active{
     background: #f5f4f8;
 }
 
-.lib-panel {
-    margin-bottom: 20Px;
-    background-color:#b1d2e4;
-}
-
-.lib-panel img {
-    width: 280px;
-    height: 350px;
-    background-color: transparent;
-    align-items: center;
-}
-
-.lib-panel .lib-row {
-    padding: 0 20px 0 20px;
-}
-
-.lib-panel .lib-row.lib-desc {
-    position: relative;
-    height: 100%;
-    display: block;
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+	margin-top: 15px;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
     font-size: 15px;
-    color:#030b16;
-    margin-top: 30px;
-}
+  }
+  
+  .collapsible + .content {
+    display: block;
+	opacity: 0
+  }
 
-.lib-panel .lib-row.lib-header {
-    background-color: #d4e4ed;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-}
+    
+  .collapsible + .content.show {
+    display: block;
+	opacity: 1;
+  }
+  
+  .content.collapse.show + a {
+	display: none;
+  }
 
-.lib-row h1{
-    color: #163159;
-    font-size: 30px;
-}
-
-.lib-row h2{
-    color: #163159;
-    font-size: 20px;
-}
-
-.row-margin-bottom {
-    margin-bottom: 20px;
-}
-
-.box-shadow {
-    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
-}
-
-.no-padding {
-    padding: 5;
-}
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    position: relative;
+  }
